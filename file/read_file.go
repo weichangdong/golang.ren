@@ -9,7 +9,7 @@ import (
 )
 
 // 一次性读取整个文件
-func ReadAll(path string) {
+func ReadAll(path string) string {
 	fi, err := os.Open(path)
 	if err != nil {
 		panic(err)
