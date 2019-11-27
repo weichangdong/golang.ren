@@ -44,7 +44,7 @@ func ReadLineFromStr(str string) []string {
 }
 
 // 从文件一次一行读取
-func ReadLineFromStr(path string) []string {
+func ReadLineFromFile(path string) []string {
 	f, err := os.Open(path)
 	if err != nil {
 		panic(err)
