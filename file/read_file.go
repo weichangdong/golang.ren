@@ -1,4 +1,4 @@
-package readFile
+package file
 
 import (
 	"bufio"
