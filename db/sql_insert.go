@@ -22,32 +22,10 @@ var (
 )
 
 var sqlStr = `
-                           id: 191126110250762293
-                     order_id: 191126020250302043
+                           id: 150762293
+                     order_id: 19112043
                        amount: 4945
                  amount_payed: 0
-               amount_reduced: 0
-                 pre_interest: 67
-           pre_interest_payed: 67
-        grace_period_interest: 0
-  grace_period_interest_payed: 0
-grace_period_interest_reduced: 0
-                     interest: 0
-               interest_payed: 0
-                  service_fee: 489
-            service_fee_payed: 489
-                          gst: 89
-                    gst_payed: 89
-                      penalty: 0
-                penalty_payed: 0
-              penalty_reduced: 0
-                   repay_date: 1575916200000
-                        ctime: 1574759775894
-                        utime: 1574759775894
-                    stage_num: 0
-             current_stage_id: 0
-                 overdue_days: 0
-          service_fee_reduced: 0
 `
 
 func main() {

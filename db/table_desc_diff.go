@@ -25,28 +25,6 @@ var descStr = `
 | order_id                      | bigint(20) unsigned | NO   | MUL | 0       |       |
 | amount                        | bigint(20) unsigned | NO   |     | 0       |       |
 | amount_payed                  | bigint(20) unsigned | NO   |     | 0       |       |
-| amount_reduced                | bigint(20) unsigned | NO   |     | 0       |       |
-| pre_interest                  | bigint(20) unsigned | NO   |     | 0       |       |
-| pre_interest_payed            | bigint(20) unsigned | NO   |     | 0       |       |
-| grace_period_interest         | bigint(20) unsigned | NO   |     | 0       |       |
-| grace_period_interest_payed   | bigint(20) unsigned | NO   |     | 0       |       |
-| grace_period_interest_reduced | bigint(20) unsigned | NO   |     | 0       |       |
-| interest                      | bigint(20) unsigned | NO   |     | 0       |       |
-| interest_payed                | bigint(20) unsigned | NO   |     | 0       |       |
-| service_fee                   | bigint(20) unsigned | NO   |     | 0       |       |
-| service_fee_payed             | bigint(20) unsigned | NO   |     | 0       |       |
-| gst                           | bigint(20) unsigned | NO   |     | 0       |       |
-| gst_payed                     | bigint(20) unsigned | NO   |     | 0       |       |
-| penalty                       | bigint(20) unsigned | NO   |     | 0       |       |
-| penalty_payed                 | bigint(20) unsigned | NO   |     | 0       |       |
-| penalty_reduced               | bigint(20) unsigned | NO   |     | 0       |       |
-| repay_date                    | bigint(20) unsigned | NO   | MUL | 0       |       |
-| ctime                         | bigint(20) unsigned | NO   |     | 0       |       |
-| utime                         | bigint(20) unsigned | NO   | MUL | 0       |       |
-| stage_num                     | int(20) unsigned    | NO   |     | 0       |       |
-| current_stage_id              | bigint(20) unsigned | NO   |     | 0       |       |
-| overdue_days                  | int(11) unsigned    | NO   |     | 0       |       |
-| service_fee_reduced           | bigint(20) unsigned | NO   |     | 0       |       |
 `
 
 func main() {
