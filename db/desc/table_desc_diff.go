@@ -8,23 +8,28 @@ import (
 	"strings"
 )
 
-const WhichFuncWillUse = "desc" //desc
+const WhichFuncWillUse = "diff" //desc
 
 // 比较两个 `desc table`的结果的不同
 // desc一个表,然后吧字段组合成可insert
 var diffTest = `
-
+| id    | int(11)  | YES  |     | NULL    |       |
+| dt    | datetime | YES  |     | NULL    |       |
++-------+----------+------+-----+---------+-------+
 `
 
 var diffOnline = `
-
+| id    | int(11)  | YES  |     | NULL    |       |
+| dt    | datetime | YES  |     | NULL    |       |
+| dt2    | datetime | YES  |     | NULL    |       |
++-------+----------+------+-----+---------+-------+
 `
 
 var descStr = `
-| id                            | bigint(20) unsigned | NO   | PRI | 0       |       |
-| order_id                      | bigint(20) unsigned | NO   | MUL | 0       |       |
-| amount                        | bigint(20) unsigned | NO   |     | 0       |       |
-| amount_payed                  | bigint(20) unsigned | NO   |     | 0       |       |
+| id                            | int(2) unsigned | NO   | PRI | 0       |       |
+| order_id                      | int(2) unsigned | NO   | MUL | 0       |       |
+| amount                        | int(2) unsigned | NO   |     | 0       |       |
+| amount_payed                  | int(2) unsigned | NO   |     | 0       |       |
 `
 
 func main() {
@@ -45,7 +50,7 @@ func diff() {
 	afterDiff2 := parseStr(diffOnline)
 	fmt.Println("Len1:", len(afterDiff1), " Len2:", len(afterDiff2))
 	theDiff := findDiff(afterDiff1, afterDiff2)
-	fmt.Println(theDiff)
+	fmt.Println("Diff:", theDiff)
 }
 
 func InArray(f string, all []string) bool {
